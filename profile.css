@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.admin-dashboard {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #8c7762;
+    padding: 20px;
+    height: 100vh;
+    color: black;
+}
+
+.sidebar .logo img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.admin-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.admin-info img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.admin-info h3 {
+    margin: 10px 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover {
+    background: #6d5c4f;
+}
+
+.logout {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logout a {
+    text-decoration: underline;
+    color: blue;
+    font-size: 16px;
+}
+
+/* Profile Section */
+.profile-container {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f4e7d1;
+}
+
+.details-heading {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20%;
+}
+
+/* Form Styling */
+form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #b8a68f;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #5a4235;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3f2c21;
+}

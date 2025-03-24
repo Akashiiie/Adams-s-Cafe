@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Admin Dashboard</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="Primary_Logo-removebg-preview.png" alt="Cafe Logo">
+            </div>
+            <div class="profile">
+                <img src="download-removebg-preview.png" alt="Admin Profile">
+                <p>Admin</p>
+                <a href="editprofile.html">Edit Profile</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">Dashboard</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Orders</a></li>
+                    <li><a href="customer.html">Customers</a></li>
+                    <li><a href="usermngt.html">Customer Management</a></li>
+                </ul>
+            </nav>
+            <a href="login.html">⬅ Logout</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Customer Reviews</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Customer Name</th>
+                        <th>Reviews</th>
+                        <th>Rating</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="review-table">
+                    <!-- Reviews will be inserted here using JavaScript -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="customer.js"></script>
+</body>
+</html>

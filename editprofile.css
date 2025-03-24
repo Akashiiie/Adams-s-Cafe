@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5d6b8;
+}
+
+.admin-dashboard {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #8c7762;
+    padding: 20px;
+    height: 100vh;
+    color: white;
+}
+
+.sidebar .logo img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.admin-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.admin-info img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+}
+
+.sidebar nav ul li a:hover {
+    background: #6d5c4f;
+}
+
+.logout {
+    text-align: center;
+}
+
+.logout a {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Edit Profile Section */
+.edit-profile-container {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.profile-pic img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.profile-pic p {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Form Styling */
+form {
+    width: 60%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Save Button */
+button {
+    background-color: #5a4235;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #64463c;
+}

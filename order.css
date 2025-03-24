@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.admin-dashboard {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #8c7762;
+    padding: 20px;
+    height: 100vh;
+    color: black;
+}
+
+.sidebar .logo img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.admin-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.admin-info img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+}
+
+.sidebar nav ul li a:hover {
+    background: #6d5c4f;
+}
+
+.logout {
+    text-align: center;
+}
+
+.logout a {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Orders Section */
+.orders-container {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.order-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.update-btn {
+    background-color: #8c7762;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Orders Table */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.orders-table th, .orders-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Status Styles */
+.status {
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.status.preparing {
+    background-color: red;
+}
+
+.status.processing {
+    background-color: blue;
+}
+
+.status.pending {
+    background-color: orange;
+}
+
+/* Payment Styles */
+.payment {
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.payment.paid {
+    background-color: green;
+}
+
+.payment.unpaid {
+    background-color: red;
+}
+
+/* Delivery Button */
+.delivery-btn {
+    background-color: #b8a68f;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}

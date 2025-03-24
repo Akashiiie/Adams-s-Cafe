@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Orders</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="Primary_Logo-removebg-preview.png" alt="Cafe Logo">
+            </div>
+            <div class="admin-info">
+                <img src="download-removebg-preview.png" alt="Admin">
+                <h3>Admin</h3>
+                <a href="editprofile.html">Edit Profile</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">Dashboard</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Orders</a></li>
+                    <li><a href="customer.html">Customers Review</a></li>
+                    <li><a href="usermngt.html">User Management</a></li>
+                </ul>
+            </nav>
+            <div class="logout">
+                <a href="login.html">⬅ Logout</a>
+            </div>
+        </aside>
+
+        <!-- Customer Orders Section -->
+        <main class="orders-container">
+            <table class="customer-orders-table">
+                <thead>
+                    <tr>
+                        <th>Order Id</th>
+                        <th>Customer Name</th>
+                        <th>Items</th>
+                        <th>Total Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Kris</td>
+                        <td>Latte, Cappuccino</td>
+                        <td>₱100</td>
+                        <td><span class="status complete">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Christal</td>
+                        <td>Latte, Muffin</td>
+                        <td>₱100</td>
+                        <td><span class="status complete">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Angela</td>
+                        <td>Chocolate Frappe</td>
+                        <td>₱120</td>
+                        <td><span class="status complete">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Jean</td>
+                        <td>Chocolate Frappe</td>
+                        <td>₱125</td>
+                        <td><span class="status complete">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Marjorie</td>
+                        <td>Caramel Macchiato</td>
+                        <td>₱125</td>
+                        <td><span class="status complete">Complete</span></td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td>Gerald</td>
+                        <td>Matcha Frappe</td>
+                        <td>₱125</td>
+                        <td><span class="status complete">Complete</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

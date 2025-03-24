@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Management</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="Primary_Logo-removebg-preview.png" alt="Cafe Logo">
+            </div>
+            <div class="admin-info">
+                <img src="download-removebg-preview.png" alt="Admin">
+                <h3>Admin</h3>
+                <a href="editprofile.html">Edit Profile</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="mainpage.html">Dashboard</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Orders</a></li>
+                    <li><a href="customer.html">Customers Review</a></li>
+                    <li><a href="usermngt.html">User Management</a></li>
+                </ul>
+            </nav>
+            <div class="logout">
+                <a href="login.html">⬅ Logout</a>
+            </div>
+        </aside>
+
+        <!-- Orders Section -->
+        <main class="orders-container">
+            <h2>Orders</h2>
+            <div class="order-controls">
+                <span>(0) selected</span>
+                <button class="update-btn">Update</button>
+                <label>Show 
+                    <select>
+                        <option>20</option>
+                        <option>50</option>
+                        <option>100</option>
+                    </select>
+                </label>
+            </div>
+
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Order</th>
+                        <th>Date/Time</th>
+                        <th>Order Status</th>
+                        <th>Amount</th>
+                        <th>Actions</th>
+                        <th>Service</th>
+                        <th>Payment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#300</td>
+                        <td>11 Feb 2025 <br> 10:23 AM</td>
+                        <td><span class="status preparing">Preparing</span></td>
+                        <td>120</td>
+                        <td><input type="checkbox"></td>
+                        <td><button class="delivery-btn">Delivery</button></td>
+                        <td><span class="payment paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#295</td>
+                        <td>11 Feb 2025 <br> 10:59 AM</td>
+                        <td><span class="status processing">Processing</span></td>
+                        <td>350</td>
+                        <td><input type="checkbox"></td>
+                        <td><button class="delivery-btn">Delivery</button></td>
+                        <td><span class="payment paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#292</td>
+                        <td>10 Feb 2025 <br> 5:00 PM</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td>580</td>
+                        <td><input type="checkbox"></td>
+                        <td><button class="delivery-btn">Delivery</button></td>
+                        <td><span class="payment unpaid">Unpaid</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#190</td>
+                        <td>2 Feb 2025 <br> 3:35 PM</td>
+                        <td><span class="status preparing">Preparing</span></td>
+                        <td>340</td>
+                        <td><input type="checkbox"></td>
+                        <td><button class="delivery-btn">Delivery</button></td>
+                        <td><span class="payment paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#300</td>
+                        <td>2 Feb 2025 <br> 3:35 PM</td>
+                        <td><span class="status preparing">Preparing</span></td>
+                        <td>600</td>
+                        <td><input type="checkbox"></td>
+                        <td><button class="delivery-btn">Delivery</button></td>
+                        <td><span class="payment paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#320</td>
+                        <td>2 Feb 2025 <br> 4:35 PM</td>
+                        <td><span class="status preparing">Pending</span></td>
+                        <td>900</td>
+                        <td><input type="checkbox"></td>
+                        <td><button class="delivery-btn">Delivery</button></td>
+                        <td><span class="payment paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>#420</td>
+                        <td>2 Jan 2025 <br> 7:35 PM</td>
+                        <td><span class="status preparing">Processing</span></td>
+                        <td>900</td>
+                        <td><input type="checkbox"></td>
+                        <td><button class="delivery-btn">Delivery</button></td>
+                        <td><span class="payment paid">Paid</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="order-status-links">
+                <a href="#">All (4)</a> | 
+                <a href="#">Bin (0)</a> | 
+                <a href="#">Processing (2)</a> | 
+                <a href="#">Preparing (3)</a> | 
+                <a href="#">Pending (2)</a>
+            </div>
+        </main>
+    </div>
+
+    <script src="order.js"></script>
+</body>
+</html>
